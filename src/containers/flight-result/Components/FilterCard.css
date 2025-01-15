@@ -1,0 +1,68 @@
+.col-33 {
+    width: 32.33%;
+}
+
+.sort-filter {
+    background: #fff;
+    box-shadow: 0 0 10px #eceeec;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 0 10px;
+    box-shadow: 0 3px 6px rgba(25, 27, 36, 0.16), 0 -1px 4px rgba(25, 27, 36, 0.04);
+}
+
+.sort-filter .filter-content {
+    padding: 4px 12px;
+}
+
+.sort-filter .col-33 {
+    padding: 0 8px;
+    margin: 12px 0;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.sort-filter .col-33::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: -7px;
+    width: 2px;
+    height: 45px;
+    background: #d9dde8;
+}
+
+.sort-filter .col-33:last-of-type:after {
+    display: none;
+}
+
+.sort-filter .col-33:hover {
+    background: #ececec;
+}
+
+.sort-filter .col-33.active {
+    background: #ececec;
+}
+
+.sort-filter .col-33:last-of-type {
+    border: none;
+}
+
+.sort-filter h4 {
+    font-size: 16px;
+}
+
+@media (max-width:480px) {
+    .sort-filter {
+        padding: 0 5px;
+    }
+
+    .sort-filter .filter-content {
+        padding: 4px 0px;
+    }
+
+    .sort-filter .col-33 {
+        margin: 5px 0;
+    }
+}
